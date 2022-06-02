@@ -1,0 +1,143 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+
+#iconHeading {
+  color: #8d4fff;
+  font-family: Brush Script MT, cursive;
+  text-align: right;
+  height: 55px;
+}
+
+#im {
+  background-image: url('https://mdbootstrap.com/img/Photos/Others/gradient2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+
+
+.jarallax {
+  height: 850px;
+}
+
+@media (max-width: 740px) {
+
+  html,
+  body,
+  header,
+  .jarallax {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+
+  html,
+  body,
+  header,
+  .jarallax {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 650px) {
+  header .jarallax h1 {
+    margin-bottom: .5rem !important;
+  }
+
+  header .jarallax h5 {
+    margin-bottom: .5rem !important;
+  }
+}
+
+
+@media (min-width: 660px) and (max-width: 700px) {
+  header .jarallax h1 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  header .jarallax h5 {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #9da4b1 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+/* @media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #9da4b1 !important;
+  }
+} */
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #9da4b1 !important;
+  }
+}
+
+footer.page-footer {
+  background-color: #9da4b1;
+}
+
+.navbar {
+  padding: 0;
+  
+  
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  
+  /* justify-content: center; */
+}
+
+.navbar li {
+  position: relative;
+
+}
+
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #5c768d;
+  white-space: nowrap;
+  transition: 0.3s;
+  /* color: white; */
+
+}
+
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+  padding: 8px 5px;
+
+}
+
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover>a {
+  color: #ffffff;
+  box-shadow: 0 10px 20px 0 rgb(5 16 44 / 15%);
+  background: linear-gradient(to top right, #fa9e1b, #8d4fff);
+  border-radius: 4px;
+  padding: 10px 10px;
+  margin: 8px;
+  /* border-radius: 25px 0px 25px 0px; */
+  /* background: #ffffff; */
+  /* color: #428bca; */
+  /* color: #000; */
+}
