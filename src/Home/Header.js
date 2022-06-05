@@ -1,14 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useState } from "react";
 import WOW from 'wowjs';
 import './Header.css'
 
 export const Header = () => {
 
-    useEffect(() => {
-        new WOW.WOW({
-            live: false
-        }).init();
-    }, [])
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
 
@@ -16,218 +12,43 @@ export const Header = () => {
             <header>
                 {/* <!--Main Navigation--> */}
 
-                {/* <!--Navbar--> */}
-                <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-                    <div class="container-fluid">
-                        {/* <!-- Navbar brand --> */}
-                        <h1 id='iconHeading'>Muhammad Faiz e Raza</h1>
-                        
-                        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-                            aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-bars"></i>
-                        </button>
-                        <div class="collapse navbar-collapse"  >
-                            <div class="container" id="headerContainer">
-
-
-
-                                <nav id="navbar">
-                                    <ul>
-                                        <li><a class="nav-link scrollto" href="#carouselExampleCaptions">Home</a></li>
-                                        <li><a class="nav-link scrollto" href="#about">About</a></li>
-                                        <li><a class="nav-link scrollto" href="#genomics">Services</a></li>
-                                        <li><a class="nav-link scrollto" href="#faq">Profile</a></li>
-                                        <li><a class="nav-link scrollto" href="#services">Blog</a></li>
-                                        <li><a class="nav-link scrollto" href="#portfolio">career</a></li>
-                                        <li><a class="nav-link scrollto" href="#technical">Product</a></li>
-                                        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                                    </ul>
-                                    <i class="bi bi-list mobile-nav-toggle" id="navButton"></i>
-                                </nav>
-
-
-
-                            </div>
-                            <ul class="navbar-nav d-flex flex-row">
-                                {/* <!-- Icons --> */}
-                                <li class="nav-item me-3 me-lg-0">
-                                    <a class="nav-link" href="" rel="nofollow"
-                                        target="_blank">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </li>
-                                <li class="nav-item me-3 me-lg-0">
-                                    <a class="nav-link" href="" rel="nofollow" target="_blank">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li class="nav-item me-3 me-lg-0">
-                                    <a class="nav-link" href="" rel="nofollow" target="_blank">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="nav-item me-3 me-lg-0">
-                                    <a class="nav-link" href="" rel="nofollow" target="_blank">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                <div className="Navbar" id="navbar">
+                    <span className="nav-logo">DevLHB</span>
+                    <div className={`nav-items ${isOpen && "open"}`}>
+                        <a href="/home">Home</a>
+                        <a href="/about">About</a>
+                        <a href="/about">Portfolio</a>
+                        <a href="/about">Services</a>
+                        <a href="/contact">Contact</a>
                     </div>
-                </nav>
-
-                {/* <!-- Intro Section --> */}
-                <div class="view jarallax" data-jarallax='{"speed": 0.2}'
-                    id='im' >
-                    <div class="mask rgba-purple-slight">
-                        <div class="container h-100 d-flex justify-content-center align-items-center">
-                            <div class="row pt-5 mt-3">
-                                <div class="col-md-12 wow fadeIn mb-3">
-                                    <div class="text-center">
-                                        <h1 class="display-4 font-weight-bold mb-5 wow fadeInUp">Our New Joining is Ready</h1>
-                                        {/* </li> */}
-                                        <h5 class="mb-5 wow fadeInUp" data-wow-delay="0.2s">It comes with a lot of new features, easy to follow
-                                            videos and images. Check it out now!</h5>
-                                        <div class="wow fadeInUp" data-wow-delay="0.4s">
-                                            <a class="btn btn-purple btn-rounded"><i class="fas fa-user left"></i> Sign up!</a>
-                                            <a class="btn btn-outline-purple btn-rounded"><i class="fas fa-book left "></i> Learn more</a>
-                                        </div>
-                                        {/* </ul> */}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div
+                        className={`nav-toggle ${isOpen && "open"}`}
+                        onClick={() => setIsOpen(!isOpen)}
+                    >
+                        <div className="bar"></div>
                     </div>
-
                 </div>
             </header >
+
+            {/* <!--Main Navigation--> */}
+
             <main>
+
+{/* <div> */}
+                    <section class="section wow fadeIn" data-wow-delay="0.3s">
+                        <div class="row">
+                            <img src="https://buildmydapp.co/wp-content/uploads/2020/11/pexels-fauxels-3184306.jpg" />
+                        </div>
+                    </section>
+                    <hr class="mb-5" />
+{/* </div> */}
 
                 <div class="container">
 
-                    {/* <!--Section: Features v.4--> */}
-                    <section class="section wow fadeIn" data-wow-delay="0.3s">
-
-                        {/* <!--Section heading--> */}
-                        <h1 class="font-weight-bold text-center h1 my-5">Why is it so great?</h1>
-                        {/* <!--Section description--> */}
-                        <p class="text-center grey-text mb-5 mx-auto w-responsive lead">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas
-                            nostrum quisquam eum porro a pariatur accusamus veniam.</p>
-
-                        {/* <!--Grid row--> */}
-                        <div class="row">
-
-                            {/* <!--Grid column--> */}
-                            <div class="col-md-4">
-
-                                {/* <!--Grid row--> */}
-                                <div class="row mb-2">
-                                    <div class="col-2">
-                                        <i class="fas fa-2x fa-flag-checkered text-info"></i>
-                                    </div>
-                                    <div class="col-10">
-                                        <h5 class="font-weight-bold mb-4">International</h5>
-                                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
-                                            nam, aperiam minima assumenda.</p>
-                                    </div>
-                                </div>
-                                {/* <!--Grid row--> */}
-
-                                {/* <!--Grid row--> */}
-                                <div class="row mb-2">
-                                    <div class="col-2">
-                                        <i class="fas fa-2x fa-flask text-secondary"></i>
-                                    </div>
-                                    <div class="col-10">
-                                        <h5 class="font-weight-bold mb-4">Experimental</h5>
-                                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
-                                            nam, aperiam minima assumenda.</p>
-                                    </div>
-                                </div>
-                                {/* <!--Grid row--> */}
-
-                                {/* <!--Grid row--> */}
-                                <div class="row mb-2">
-                                    <div class="col-2">
-                                        <i class="fas fa-2x fa-glass-martini text-primary"></i>
-                                    </div>
-                                    <div class="col-10">
-                                        <h5 class="font-weight-bold mb-4">Relaxing</h5>
-                                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
-                                            nam, aperiam minima assumenda.</p>
-                                    </div>
-                                </div>
-                                {/* <!--Grid row--> */}
-
-                            </div>
-                            {/* <!--Grid column--> */}
-
-                            {/* <!--Grid column--> */}
-                            <div class="col-md-4 mb-2 text-center text-md-left flex-center">
-                                <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/iphone-portfolio1.png" alt="" class="z-depth-0" />
-                            </div>
-                            {/* <!--Grid column--> */}
-
-                            {/* <!--Grid column--> */}
-                            <div class="col-md-4">
-
-                                {/* <!--Grid row--> */}
-                                <div class="row mb-2">
-                                    <div class="col-2">
-                                        <i class="fas fa-2x fa-heart text-danger"></i>
-                                    </div>
-                                    <div class="col-10">
-                                        <h5 class="font-weight-bold mb-4">Beloved</h5>
-                                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
-                                            nam, aperiam minima assumenda.</p>
-                                    </div>
-                                </div>
-                                {/* <!--Grid row--> */}
-
-                                {/* <!--Grid row--> */}
-                                <div class="row mb-2">
-                                    <div class="col-2">
-                                        <i class="fas fa-2x fa-bolt text-secondary"></i>
-                                    </div>
-                                    <div class="col-10">
-                                        <h5 class="font-weight-bold mb-4">Rapid</h5>
-                                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
-                                            nam, aperiam minima assumenda.</p>
-                                    </div>
-                                </div>
-                                {/* <!--Grid row--> */}
-
-                                {/* <!--Grid row--> */}
-                                <div class="row mb-2">
-                                    <div class="col-2">
-                                        <i class="fas fa-2x fa-magic text-success"></i>
-                                    </div>
-                                    <div class="col-10">
-                                        <h5 class="font-weight-bold mb-4">Magical</h5>
-                                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
-                                            nam, aperiam minima assumenda.</p>
-                                    </div>
-                                </div>
-                                {/* <!--Grid row--> */}
-
-                            </div>
-                            {/* <!--Grid column--> */}
-
-                        </div>
-                        {/* <!--Grid row--> */}
-
-                    </section>
-                    {/* <!--/Section: Features v.4--> */}
-
-                    <hr class="mb-5" />
-
-                    {/* <!--Section: Testimonials v.3--> */}
                     <section class="section team-section text-center pb-3 wow fadeIn" data-wow-delay="0.3s">
 
-                        {/* <!--Section heading--> */}
+
                         <h1 class="font-weight-bold text-center h1 my-5">Testimonials</h1>
-                        {/* <!--Section description--> */}
                         <p class="text-center grey-text mb-5 mx-auto w-responsive">Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
                             quisquam eum porro a pariatur accusamus veniam.</p>
