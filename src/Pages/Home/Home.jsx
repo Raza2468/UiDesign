@@ -1,131 +1,133 @@
 import React from "react";
 import Header from "./Header/Header";
+import './Home.css'
+
 
 const Home = () => {
+
+
   return (
     <div>
       <Header />
 
-      {/* <h1>Home</h1> */}
       <main>
-        {/* <div> */}
-        <section class="section wow fadeIn" data-wow-delay="0.3s">
-          <div class="row">
-            <img src="https://buildmydapp.co/wp-content/uploads/2020/11/pexels-fauxels-3184306.jpg" />
-          </div>
+        <section id="hero" class="d-flex align-items-center">
         </section>
-        <hr class="mb-5" />
-
-        <div class="container">
-          <section
-            class="section team-section text-center pb-3 wow fadeIn"
-            data-wow-delay="0.3s"
-          >
-            <h1 class="font-weight-bold text-center h1 my-5">Testimonials</h1>
-            <p class="text-center grey-text mb-5 mx-auto w-responsive">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-              error amet numquam iure provident voluptate esse quasi, veritatis
-              totam voluptas nostrum quisquam eum porro a pariatur accusamus
-              veniam.
-            </p>
-
-            {/* <!--Grid row--> */}
-            <div class="row text-center">
-              {/* <!--Grid column--> */}
-              <div class="col-md-4 mb-4">
-                <div class="testimonial">
-                  {/* <!--Avatar--> */}
-                  <div class="avatar mx-auto">
-                    <img
-                      src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg"
-                      class="rounded-circle z-depth-1 img-fluid"
-                    />
-                  </div>
-
-                  {/* <!--Content--> */}
-                  <h4 class="font-weight-bold mt-4 mb-3">Anna Deynah</h4>
-                  <h6 class="mb-3 font-weight-bold grey-text">Web Designer</h6>
-                  <p>
-                    <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit
-                    amet, consectetur adipisicing elit. Quod eos id officiis hic
-                    tenetur quae quaerat ad velit ab hic tenetur.
-                  </p>
-
-                  {/* <!--Review--> */}
-                  <div className="text-warning">
-                    <i class="fas fa-star"> </i>
-                    <i class="fas fa-star"> </i>
-                    <i class="fas fa-star"> </i>
-                    <i class="fas fa-star"> </i>
-                    <i class="fas fa-star-half-alt"> </i>
-                  </div>
-                </div>
-              </div>
-              {/* <!--Grid column--> */}
-
-              {/* <!--Grid column--> */}
-              <div class="col-md-4 mb-4">
-                <div class="testimonial">
-                  {/* <!--Avatar--> */}
-                  <div class="avatar mx-auto">
-                    <img
-                      src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg"
-                      class="rounded-circle z-depth-1 img-fluid"
-                    />
-                  </div>
-
-                  {/* <!--Content--> */}
-                  <h4 class="font-weight-bold mt-4 mb-3">John Doe</h4>
-                  <h6 class="mb-3 font-weight-bold grey-text">Web Developer</h6>
-                  <p>
-                    <i class="fas fa-quote-left"></i> Ut enim ad minima veniam,
-                    quis nostrum exercitationem ullam corporis suscipit
-                    laboriosam, nisi ut aliquid ex ea commodi.
-                  </p>
-
-                  <div class="text-warning">
-                    <i class="fas fa-star"> </i>
-                    <i class="fas fa-star"> </i>
-                    <i class="fas fa-star"> </i>
-                    <i class="fas fa-star"> </i>
-                    <i class="fas fa-star"> </i>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 mb-4">
-                <div class="testimonial">
-                  <div class="avatar mx-auto">
-                    <img
-                      src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg"
-                      class="rounded-circle z-depth-1 img-fluid"
-                    />
-                  </div>
-
-                  <h4 class="font-weight-bold mt-4 mb-3">Maria Kate</h4>
-                  <h6 class="mb-3 font-weight-bold grey-text">Photographer</h6>
-                  <p>
-                    <i class="fas fa-quote-left"></i> At vero eos et accusamus
-                    et iusto odio dignissimos ducimus qui blanditiis praesentium
-                    voluptatum deleniti atque corrupti.
-                  </p>
-
-                  <div class="text-warning">
-                    <i class="fas fa-star"> </i>
-                    <i class="fas fa-star"> </i>
-                    <i class="fas fa-star"> </i>
-                    <i class="fas fa-star"> </i>
-                    <i class="far fa-star"> </i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <hr class="mb-5" />
-        </div>
       </main>
+
+      {/* Cards */}
+
+      <section id="why-us" class="why-us">
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-lg- d-flex align-items-stretch">
+              <div class="icon-boxes d-flex flex-column justify-content-center">
+                <div class="row">
+                  <div class="col-xl-3 d-flex align-items-stretch">
+                    <div class="icon-box mt-4 mt-xl-0">
+                      <img src="https://buildmydapp.co/wp-content/uploads/2022/02/proud-winner-ceo-magazine.png" height={160} />
+
+                      <span >
+                        <i class="fas fa-star"> </i>
+                        <i class="fas fa-star"> </i>
+                        <i class="fas fa-star"> </i>
+                        <i class="fas fa-star"> </i>
+                        <i class="far fa-star"> </i>
+                      </span>
+                      <h4 class="text-warning">100+ Reviews</h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 d-flex align-items-stretch">
+                    <div class="icon-box mt-4 mt-xl-0">
+                      <img src="https://buildmydapp.co/wp-content/uploads/2022/02/proud-winner-ceo-magazine.png" height={160} />
+
+                      <span >
+                        <i class="fas fa-star"> </i>
+                        <i class="fas fa-star"> </i>
+                        <i class="fas fa-star"> </i>
+                        <i class="fas fa-star"> </i>
+                        <i class="far fa-star"> </i>
+                      </span>
+                      <h4 class="text-warning">100+ Reviews</h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 d-flex align-items-stretch">
+                    <div class="icon-box mt-4 mt-xl-0">
+                      <img src="https://buildmydapp.co/wp-content/uploads/2022/02/proud-winner-ceo-magazine.png" height={160} />
+
+                      <span >
+                        <i class="fas fa-star"> </i>
+                        <i class="fas fa-star"> </i>
+                        <i class="fas fa-star"> </i>
+                        <i class="fas fa-star"> </i>
+                        <i class="far fa-star"> </i>
+                      </span>
+                      <h4 class="text-warning">100+ Reviews</h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 d-flex align-items-stretch">
+                    <div class="icon-box mt-4 mt-xl-0">
+                      <img src="https://buildmydapp.co/wp-content/uploads/2022/02/proud-winner-ceo-magazine.png" height={160} />
+
+                      <span >
+                        <i class="fas fa-star"> </i>
+                        <i class="fas fa-star"> </i>
+                        <i class="fas fa-star"> </i>
+                        <i class="fas fa-star"> </i>
+                        <i class="far fa-star"> </i>
+                      </span>
+                      <h4 class="text-warning">100+ Reviews</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* <!-- End .content--> */}
+            </div>
+          </div>
+
+        </div>
+      </section>
+      {/* <!-- End Why Us Section --> */}
+
+      <br />
+      <br />
+      <br />
+
+      {/* <!-- ======= About Section ======= --> */}
+      <section id="homeAbout">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+
+            <div class="col-lg-6 content" id="dollarText">
+              <h2 >How Does Blockchain Work?</h2>
+              <p id="dollarText">
+                Blockchain is a procedure for recording data that makes it troublesome or difficult to change, hack, or cheat the framework.
+                <br />
+                A blockchain is basically a computerized record of exchanges that is copied and dispersed across the whole organization of PC frameworks on the blockchain. Each square in the chain contains various exchanges, and each time another exchange happens on the blockchain, a record of that exchange is added to each member’s record.
+                The decentralized data set oversaw by different members is known as Distributed Ledger Technology (DLT).
+                <br />
+                Blockchain is a kind of DLT where exchanges are recorded with a permanent cryptographic mark called a hash. .
+              </p>
+            </div>
+
+            <div class="col-lg-6 about-img ">
+              <img id="dollarImage" src="https://buildmydapp.co/wp-content/uploads/2021/12/business-g4c28e0d67_1280.jpg" alt="" height={300} />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <hr />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
+
+
   );
 };
 
