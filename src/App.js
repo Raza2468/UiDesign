@@ -10,18 +10,24 @@ import {
   Game,
   WebAndMobile,
 } from "./Pages/index";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+
 import "./App.css";
 
+
+
+
 export const App = () => {
+
+
+
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        {/* <Route path="/header" element={<Header />} /> */}
+        <Route path="/" element={<Home />} /> 
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        
+
         <Route>
           <Route path="blockchain" element={<Blockchain />} />
           <Route path="cloud" element={<Cloud />} />
