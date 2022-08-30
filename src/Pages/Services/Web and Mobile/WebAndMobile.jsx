@@ -36,7 +36,7 @@ const WebAndMobile = () => {
               <br />
               <br />
               <br />
-              <img id="dollarImage" src="https://buildmydapp.co/wp-content/uploads/2022/01/gradient-ui-ux-elements-pack_23-2149060728.jpg" alt="" height={550} />
+              <img id="dollarImage" src="https://i.pinimg.com/originals/0c/e2/c1/0ce2c15497073dde03f7206c24b7de9d.png" alt="" height={550} />
             </div>
 
           </div>
@@ -50,7 +50,7 @@ const WebAndMobile = () => {
               <br />
               <br />
               <br />
-              <img id="dollarImage" src="https://buildmydapp.co/wp-content/uploads/2022/01/phone-gbdc66f2b9_1280.jpg" alt="" width={550} height={550} />
+              <img id="dollarImage" src="https://banner2.cleanpng.com/20180224/tae/kisspng-mobile-app-application-software-computer-terminal-creative-technology-5a912dc2536413.0892955715194638743416.jpg" alt="" width={550} height={550} />
             </div>
             <div class="col-lg-6 content" id="dollarText">
               <br />

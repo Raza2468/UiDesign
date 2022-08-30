@@ -25,7 +25,7 @@ const Blog = () => {
           <div class="row">
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
               <div class="card">
-                <img src="https://buildmydapp.co/wp-content/uploads/2022/02/API.webp" class="card-img-top" alt="..." />
+                <img src="https://www.freecodecamp.org/news/content/images/size/w2000/2022/02/arnold-francisca-f77Bh3inUpE-unsplash.jpg" class="card-img-top" alt="..." />
                 <div class="card-icon">
                   <i class="bx bx-book-reader"></i>
                 </div>
@@ -37,7 +37,7 @@ const Blog = () => {
             </div>
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
               <div class="card">
-                <img src="https://buildmydapp.co/wp-content/uploads/2022/02/gradient-ui-ux-background.webp" class="card-img-top" alt="..." />
+                <img src="https://www.codingdojo.com/blog/wp-content/uploads/codelaptop.jpg" class="card-img-top" alt="..." />
                 <div class="card-icon">
                   <i class="bx bx-calendar-edit"></i>
                 </div>

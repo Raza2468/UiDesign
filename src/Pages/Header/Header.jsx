@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { Link, useLocation } from "react-router-dom";
-
+import { Col, Row } from 'antd';
+import logo from '../Images/logo.jpeg'
 
 // function ScrollToTop() {
 //   // e.preventDefault()
@@ -25,7 +26,7 @@ const Header = () => {
   const [navColor, setnavColor] = useState("transparent");
 
   const listenScrollEvent = () => {
-    window.scrollY > 10 ? setnavColor("#5265c4") : setnavColor("transparent");
+    window.scrollY > 10 ? setnavColor("#012049") : setnavColor("transparent");
     window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem");
   };
 
@@ -47,24 +48,71 @@ const Header = () => {
             height: navSize,
             transition: "all 1s"
           }}>
-          <span className="nav-logo"><img src="https://buildmydapp.co/wp-content/uploads/2021/09/output-onlinepngtools1.png" height={70} /></span>
+          <span className="nav-logo"><img src={logo} height={70} /></span>
           <div className={`nav-items ${isOpen && "open"}`}>
             <Link to="/" >Home</Link>
-            <Link to="/about" >About</Link>
-            <Link to="/portfolio" >Portfolio</Link>
-
             <div class="dropdown">
-              <div id="services"> Services<img src="https://icon-library.com/images/dropdown-menu-icon/dropdown-menu-icon-12.jpg" height={20} /></div>
+              <div id="services">Services<img src="https://icon-library.com/images/dropdown-menu-icon/dropdown-menu-icon-12.jpg" height={20} /></div>
+
               <div class="dropdown-content">
-                <Link to="/blockchain" >Blockchain</Link>
-                <Link to="/cloud" >Cloud</Link>
-                <Link to="/game" >Game</Link>
-                <Link to="/WebAndMobile" >Web and Mobile</Link>
+                <Row>
+                  <Col span={12}> <Link to="/blockchain" >Blockchain Development</Link></Col>
+                  <Col span={12}><Link to="/mobileApp" >Mobile App Development</Link></Col>
+                </Row>
+
+                <Row>
+                  <Col span={12}><Link to="/WebAndMobile" >Web Development</Link></Col>
+                  <Col span={12}> <Link to="/GarficDesigning" >Graphic Design</Link></Col>
+                </Row>
+
+                <Row>
+                  <Col span={12}><Link to="/TailoredSoftware">Tailored Software</Link></Col>
+                  <Col span={12}> <Link to="/DigitalMarketing"> Digital Marketing</Link></Col>
+                </Row>
+
               </div>
             </div>
 
+            <div class="dropdown">
+              <div id="services">Industries<img src="https://icon-library.com/images/dropdown-menu-icon/dropdown-menu-icon-12.jpg" height={20} /></div>
+              <div class="dropdown-Industries">
+                <Row>
+                  <Col span={12}><Link to="/Blog" >Financial Services</Link></Col>
+                  <Col span={12}> <Link to="/Cloud"> Healthcare Industry</Link></Col>
+                </Row>
+                <Row>
+                  <Col span={12}><Link to="/WebAndMobile"> Retail Industry</Link></Col>
+                  <Col span={12}> <Link to="/Contact">Textile Industry</Link></Col>
+                </Row>
+                <Row>
+                  <Col span={12}><Link to="/blockchain">Steel Industry</Link></Col>
+                  <Col span={12}> <Link to="/About">Food Industry</Link></Col>
+                </Row>
+              </div>
+            </div>
+
+
+            <div class="dropdown">
+              <div id="services"> Portfolio<img src="https://icon-library.com/images/dropdown-menu-icon/dropdown-menu-icon-12.jpg" height={20} /></div>
+              <div class="dropdown-potfolio">
+                <Row>
+                  <Col span={12}><Link to="/blockchain">Recoveri</Link></Col>
+                  <Col span={12}> <Link to="/blockchain">Doctor </Link></Col>
+                </Row>
+                <Row>
+                  <Col span={12}><Link to="/blockchain">Service</Link></Col>
+                  <Col span={12}> <Link to="/blockchain">Queue Management</Link></Col>
+                </Row>
+                <Row>
+                  <Col span={12}><Link to="/blockchain">Monitoring</Link></Col>
+                  <Col span={12}> <Link to="/blockchain">IJMA</Link></Col>
+                </Row>
+              </div>
+            </div>
+
+            <Link to="/contact" >Careers</Link>
+            <Link to="/about" >About</Link>
             <Link to="/blog" >Blog</Link>
-            <Link to="/contact" >Contact</Link>
           </div>
           <div
             className={`nav-toggle ${isOpen && "open"}`}

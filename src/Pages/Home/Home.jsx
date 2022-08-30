@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from 'react'
+
 import Header from "../Header/Header";
 import './Home.css'
+import MovingComponent from 'react-moving-text'
+import HomeSlider from '../Images/HomeSlider.jpeg'
+import axios from 'axios';
+// https://yidaoj.github.io/react-moving-text/example
 
 
 const Home = () => {
+
+
+  const AnimationsForChaining = ["jelly"]
+  const AnimationsForChainingHeading = ["fadeInFromLeft"]
+
+  const [animationIndex, setAnimationIndex] = useState(0)
+  const [animationType, setAnimationType] = useState(AnimationsForChaining[0])
+  const [animationTypeTypeHeading, setAnimationTypeHeading] = useState(AnimationsForChainingHeading[0])
+
+  const handleChainAnimation = () => {
+    setAnimationIndex(animationIndex + 1)
+    setAnimationType(animationIndex + 1)
+    setAnimationTypeHeading(animationIndex + 1)
+  }
+
+
+
+
 
 
   return (
@@ -11,7 +34,40 @@ const Home = () => {
       <Header />
 
       <main>
-        <section id="hero" class="d-flex align-items-center">
+        <section id="hero" class="d-flex align-items-center" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + HomeSlider})` }}>
+
+          <div class="carousel-container">
+            <div class="carousel-content">
+              <MovingComponent
+                onAnimationEnd={handleChainAnimation}
+                type={animationTypeTypeHeading}
+                duration="1000ms"
+                timing="linear"
+                fillMode="forwards"
+                iteration={1}>
+
+                <h2 class="animate__animated animate__fadeInDown"><span>Success Delivered </span> </h2>
+              </MovingComponent>
+
+           
+
+              <MovingComponent
+                onAnimationEnd={handleChainAnimation}
+                type={animationType}
+                duration="1000ms"
+                timing="linear"
+                fillMode="forwards"
+                iteration={1}>
+
+                {/* <p class="animate__animated animate__fadeInUp p-2">What does your company need to be successful? Equipping themselves with the Latest Technology, to Perform Exceptionally. Let AnoStrat build your Technological Masterstroke.</p> */}
+
+              </MovingComponent>
+              <div>
+                {/* <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a> */}
+              </div>
+            </div>
+          </div>
+
         </section>
       </main>
 
@@ -27,8 +83,8 @@ const Home = () => {
                 <div class="row">
                   <div class="col-xl-3 d-flex align-items-stretch">
                     <div class="icon-box mt-4 mt-xl-0">
-                      <img src="https://buildmydapp.co/wp-content/uploads/2022/02/proud-winner-ceo-magazine.png" height={160} />
-
+                      <img src="https://global-uploads.webflow.com/629e4fe96456f848f903e7ef/62acf6ff4578755fbdd55e61_near-protocol-near-logo.png" height={160} />
+                      <br />
                       <span >
                         <i class="fas fa-star"> </i>
                         <i class="fas fa-star"> </i>
@@ -41,8 +97,8 @@ const Home = () => {
                   </div>
                   <div class="col-xl-3 d-flex align-items-stretch">
                     <div class="icon-box mt-4 mt-xl-0">
-                      <img src="https://buildmydapp.co/wp-content/uploads/2022/02/proud-winner-ceo-magazine.png" height={160} />
-
+                      <img src="https://global-uploads.webflow.com/629e4fe96456f848f903e7ef/62acf6ff4578755fbdd55e61_near-protocol-near-logo.png" height={160} />
+                      <br />
                       <span >
                         <i class="fas fa-star"> </i>
                         <i class="fas fa-star"> </i>
@@ -55,8 +111,8 @@ const Home = () => {
                   </div>
                   <div class="col-xl-3 d-flex align-items-stretch">
                     <div class="icon-box mt-4 mt-xl-0">
-                      <img src="https://buildmydapp.co/wp-content/uploads/2022/02/proud-winner-ceo-magazine.png" height={160} />
-
+                      <img src="https://global-uploads.webflow.com/629e4fe96456f848f903e7ef/62acf6ff4578755fbdd55e61_near-protocol-near-logo.png" height={160} />
+                      <br />
                       <span >
                         <i class="fas fa-star"> </i>
                         <i class="fas fa-star"> </i>
@@ -69,8 +125,8 @@ const Home = () => {
                   </div>
                   <div class="col-xl-3 d-flex align-items-stretch">
                     <div class="icon-box mt-4 mt-xl-0">
-                      <img src="https://buildmydapp.co/wp-content/uploads/2022/02/proud-winner-ceo-magazine.png" height={160} />
-
+                      <img src="https://global-uploads.webflow.com/629e4fe96456f848f903e7ef/62acf6ff4578755fbdd55e61_near-protocol-near-logo.png" height={160} />
+                      <br />
                       <span >
                         <i class="fas fa-star"> </i>
                         <i class="fas fa-star"> </i>
@@ -101,19 +157,16 @@ const Home = () => {
           <div class="row">
 
             <div class="col-lg-6 content" id="dollarText">
-              <h2 >How Does Blockchain Work?</h2>
+              <h2 >How does AnoStrat work?</h2>
               <p id="dollarText">
-                Blockchain is a procedure for recording data that makes it troublesome or difficult to change, hack, or cheat the framework.
-                <br />
-                A blockchain is basically a computerized record of exchanges that is copied and dispersed across the whole organization of PC frameworks on the blockchain. Each square in the chain contains various exchanges, and each time another exchange happens on the blockchain, a record of that exchange is added to each member’s record.
-                The decentralized data set oversaw by different members is known as Distributed Ledger Technology (DLT).
-                <br />
-                Blockchain is a kind of DLT where exchanges are recorded with a permanent cryptographic mark called a hash. .
+                dropdown-contentAnoStrat creates advanced solutions that produce scalable
+                instruments of tremendous architecture. Direct communications with our
+                development team empowers you to select tailored options for your specific needs.
               </p>
             </div>
 
             <div class="col-lg-6 about-img ">
-              <img id="dollarImage" src="https://buildmydapp.co/wp-content/uploads/2021/12/business-g4c28e0d67_1280.jpg" alt="" height={300} />
+              <img id="dollarImage" src="https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2022/05/02030257/dApp-on-NEAR-Protocol.png" alt="" height={300} />
             </div>
 
           </div>

@@ -1,0 +1,107 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#Tailored {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background: url("https://intersog.com/wp-content/uploads//2021/08/4-Types-of-Custom-Application-Software-1325x590.jpg") no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+#Tailored .hero-Tailored {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* z-index: 10; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Tailored .hero-Tailored h2 {
+    color: #0c2e8a;
+    margin-bottom: 30px;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+#Tailored .hero-Tailored h2 span {
+    color: #50d8af;
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    #Tailored .hero-Tailored h2 {
+        font-size: 34px;
+    }
+}
+
+#Tailored .hero-Tailored .btn-get-started,
+#hero .hero-Tailored .btn-projects {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 2px;
+    transition: 0.5s;
+    margin: 10px;
+    color: #fff;
+}
+
+#Tailored .hero-Tailored .btn-get-started {
+    background: #0c2e8a;
+    border: 2px solid #0c2e8a;
+}
+
+#Tailored .hero-Tailored .btn-get-started:hover {
+    background: none;
+    color: #0c2e8a;
+}
+
+#Tailored .hero-Tailored .btn-projects {
+    background: #50d8af;
+    border: 2px solid #50d8af;
+}
+
+#Tailored .hero-Tailored .btn-projects:hover {
+    background: none;
+    color: #50d8af;
+}
+
+#Tailored .hero-slider {
+    /* z-index: 8; */
+    height: 60vh;
+}
+
+#Tailored .hero-slider::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* z-index: 7; */
+}
+
+#Tailored .hero-slider .swiper-slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition-property: opacity;
+}
+
+
+/*--------------------------------------------------------------
+# Tailored
+--------------------------------------------------------------*/

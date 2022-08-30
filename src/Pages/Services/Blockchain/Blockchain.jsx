@@ -9,7 +9,7 @@ const Blockchain = () => {
       <section id="blockChain">
 
         <div class="hero-content" data-aos="fade-up">
-          <h2>Our Service</h2>
+          <h2>BLOCKCHAIN</h2>
         </div>
       </section>
       <br />
@@ -25,12 +25,11 @@ const Blockchain = () => {
             <div class="col-lg-6 content" id="dollarText">
               <h2>Blockchain Development:</h2>
               <p id="dollarText">
-                We’re specialized in providing almost all the major services of BlockChain.<br />
-                We provide end to end solutions to our customers to fulfill their business <br />
-                needs which ultimately leads towards a perfect delivery.
-                We understand that Blockchain is perhaps best understood as a decentralized ledger that can diminish costs by removing intermediaries
-                such as banks and effectively decentralizing trust. The technology appends entries to the ledger which are validated by the wider
-                user-community rather than by a central authority
+                The world has changed. Web 3.0 will certainly affect your business. AnoStrat builds dAPPS (Decentralized Apps)
+                that prepare your company for The Evolution of The Internet as we know it. Seamlessly applying DeFi Protocols
+                (Decentralized Finance Protocols) to enhance traceability and secure the details of Your Business Transactions,
+                AnoStrat Fortifies the Clients that select us.
+
               </p>
             </div>
 
@@ -64,7 +63,7 @@ const Blockchain = () => {
             </div>
 
             <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
+              <div class="count-box">
                 <i class="fas fa-user-md"></i>
                 <br />
                 <br />
@@ -74,7 +73,7 @@ const Blockchain = () => {
             </div>
 
             <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
+              <div class="count-box">
                 <i class="fas fa-user-md"></i>
                 <br />
                 <br />
@@ -84,7 +83,7 @@ const Blockchain = () => {
             </div>
 
             <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-               <div class="count-box">
+              <div class="count-box">
                 <i class="fas fa-user-md"></i>
                 <br />
                 <br />

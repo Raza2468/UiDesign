@@ -9,14 +9,14 @@ const Contact = () => {
       <section id="contact">
 
         <div class="hero-content" data-aos="fade-up">
-          <h2>Contact</h2>
+          <h2>Careers</h2>
         </div>
       </section>
-<br />
-<br />
-<br />
-<br />
-<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <div id="contactForm" class="contact">
         <div class="container">
 
@@ -24,7 +24,7 @@ const Contact = () => {
             <div class="col-lg-6">
               <h3>Let’s work together</h3>
               <p>Thank you for being so awesome for thinking to talk to us.</p>
-             
+
               <div class="mb-3n">
                 <h3>Send Us a Email</h3>
                 <p>contact@buildmydapp.co</p>

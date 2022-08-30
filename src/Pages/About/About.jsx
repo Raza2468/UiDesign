@@ -1,20 +1,36 @@
 import React from "react";
 import Header from "../Header/Header";
 import './About.css'
-
+import AboutSlider from '../Images/aboutSlider.jpg'
 
 const About = () => {
   return (
     <div>
       <Header />
 
-      <section id="about">
-        <div class="hero-content" data-aos="fade-up">
-          <h2>About us</h2>
+      <section id="about" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + AboutSlider})` }}>
+        <div class="carousel-item active">
+          <div class="carousel-container">
+            <div class="carousel-content">
+              <h4 class="animate__animated animate__fadeInDown">BUILDING TECHNOLOGY SOLUTIONS WORTH YOUR EXQUISITE STANDARDS</h4>
+              <p class="animate__animated animate__fadeInUp p-2">
+                What does your company need to be successful? Equipping themselves with the Latest Technology,
+                to Perform Exceptionally. Let AnoStrat build your Technological Masterstroke.</p>
+
+            </div>
+          </div>
+        </div>
+
+        {/* <div class="hero-content" data-aos="fade-up">
+          <h3>BUILDING TECHNOLOGY SOLUTIONS WORTH YOUR EXQUISITE STANDARDS</h3>
+          <p class="animate__animated animate__fadeInUp p-2">
+            What does your company need to be successful? Equipping themselves with the Latest Technology,
+            to Perform Exceptionally.Let AnoStrat build your Technological Masterstroke.</p>
+
           <div>
             <a href="#about" class="btn-get-started scrollto">Contact Us</a>
           </div>
-        </div>
+        </div> */}
       </section>
       {/*  */}
 
