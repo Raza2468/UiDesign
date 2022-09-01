@@ -38,7 +38,8 @@ const Home = () => {
 
           <div class="carousel-container">
             <div class="carousel-content">
-              <MovingComponent
+              <h2 class="animate__animated animate__fadeInDown"><span>Driving Success</span> </h2>
+              {/* <MovingComponent
                 onAnimationEnd={handleChainAnimation}
                 type={animationTypeTypeHeading}
                 duration="1000ms"
@@ -46,8 +47,7 @@ const Home = () => {
                 fillMode="forwards"
                 iteration={1}>
 
-                <h2 class="animate__animated animate__fadeInDown"><span>Success Delivered </span> </h2>
-              </MovingComponent>
+              </MovingComponent> */}
 
            
 

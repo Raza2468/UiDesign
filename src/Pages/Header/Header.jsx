@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { Link, useLocation } from "react-router-dom";
 import { Col, Row } from 'antd';
-import logo from '../Images/logo.jpeg'
+import logo from '../Images/logo.png'
 
 // function ScrollToTop() {
 //   // e.preventDefault()
@@ -24,17 +24,23 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [navSize, setnavSize] = useState("10rem");
   const [navColor, setnavColor] = useState("transparent");
+  const [navItemColor, setnavItemColor] = useState("#fff");
 
   const listenScrollEvent = () => {
-    window.scrollY > 10 ? setnavColor("#012049") : setnavColor("transparent");
-    window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem");
+    
+    window.scrollY > 10 ? setnavSize("5rem") : setnavSize("5rem");
+    window.scrollY > 10 ? setnavColor("#fff") : setnavColor("#fff");
+    window.scrollY > 10 ? setnavItemColor("#012049") : setnavItemColor("#fff");
+
   };
 
   useEffect(() => {
+
     window.addEventListener("scroll", listenScrollEvent);
     return () => {
       window.removeEventListener("scroll", listenScrollEvent);
     };
+
   }, []);
 
 
@@ -43,11 +49,14 @@ const Header = () => {
     <div>
       <header>
         <div className="Navbar" id="nav"
+
           style={{
             backgroundColor: navColor,
+            color: navItemColor,
             height: navSize,
             transition: "all 1s"
           }}>
+
           <span className="nav-logo"><img src={logo} height={70} /></span>
           <div className={`nav-items ${isOpen && "open"}`}>
             <Link to="/" >Home</Link>
@@ -56,8 +65,8 @@ const Header = () => {
 
               <div class="dropdown-content">
                 <Row>
-                  <Col span={12}> <Link to="/blockchain" >Blockchain Development</Link></Col>
-                  <Col span={12}><Link to="/mobileApp" >Mobile App Development</Link></Col>
+                  <Col span={12}> <Link to="/blockchain" style={{ color: "#012049" }}>Blockchain Development</Link></Col>
+                  <Col span={12}><Link to="/mobileApp" style={{ color: "#012049" }} >Mobile App Development</Link></Col>
                 </Row>
 
                 <Row>
