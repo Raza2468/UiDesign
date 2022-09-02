@@ -13,6 +13,7 @@ import {
   MobileApp,
   GarficDesigning,
   DigitalMarketing,
+  Industries,
 } from "./Pages/index";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'antd/dist/antd.css';
@@ -43,6 +44,7 @@ export const App = () => {
           <Route path="DigitalMarketing" element={<DigitalMarketing />} />
         </Route>
 
+        <Route path="industries" element={<Industries />} />
         <Route path="blog" element={<Blog />} />
         <Route path="contact" element={<Contact />} />
       </Routes>

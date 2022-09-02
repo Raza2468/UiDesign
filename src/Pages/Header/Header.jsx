@@ -82,7 +82,7 @@ const Header = () => {
               </div>
             </div>
 
-            <div class="dropdown">
+            {/* <div class="dropdown">
               <div id="services">Industries<img src="https://icon-library.com/images/dropdown-menu-icon/dropdown-menu-icon-12.jpg" height={20} /></div>
               <div class="dropdown-Industries">
                 <Row>
@@ -98,10 +98,10 @@ const Header = () => {
                   <Col span={12}> <Link to="/About">Food Industry</Link></Col>
                 </Row>
               </div>
-            </div>
+            </div> */}
 
 
-            <div class="dropdown">
+            {/* <div class="dropdown">
               <div id="services"> Portfolio<img src="https://icon-library.com/images/dropdown-menu-icon/dropdown-menu-icon-12.jpg" height={20} /></div>
               <div class="dropdown-potfolio">
                 <Row>
@@ -117,8 +117,10 @@ const Header = () => {
                   <Col span={12}> <Link to="/blockchain">IJMA</Link></Col>
                 </Row>
               </div>
-            </div>
+            </div> */}
 
+            <Link to="/Industries" >Industries</Link>
+            <Link to="/portfolio" >Portfolio</Link>
             <Link to="/contact" >Careers</Link>
             <Link to="/about" >About</Link>
             <Link to="/blog" >Blog</Link>
