@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../Header/Header";
 import './About.css'
 import AboutSlider from '../Images/aboutSlider.jpg'
+import Footer from "../Footer/Footer";
+
 
 const About = () => {
   return (
@@ -51,12 +53,16 @@ const About = () => {
               <br />
               <br />
               <br />
-              <img id="dollarImage" src="https://buildmydapp.co/wp-content/uploads/2022/01/bitcoin-gc35899a75_1280-1024x614.jpg" alt="" height={300} />
+              <img id="dollarImage" src="https://img.freepik.com/premium-photo/hourglass-with-time-block-table-sand-flowing-through-bulb-sandglass-measuring-passing-countdown-deadline-life-time-retirement-concept_42256-5802.jpg?w=2000" alt="" height={300} />
             </div>
 
           </div>
         </div>
       </section>
+
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };

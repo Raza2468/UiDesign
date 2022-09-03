@@ -100,29 +100,30 @@ const Header = () => {
               </div>
             </div> */}
 
+<Link to="/Industries" >Industries</Link>
 
-            {/* <div class="dropdown">
-              <div id="services"> Portfolio<img src="https://icon-library.com/images/dropdown-menu-icon/dropdown-menu-icon-12.jpg" height={20} /></div>
+            <div class="dropdown">
+              <div id="services"> Products<img src="https://icon-library.com/images/dropdown-menu-icon/dropdown-menu-icon-12.jpg" height={20} /></div>
               <div class="dropdown-potfolio">
                 <Row>
-                  <Col span={12}><Link to="/blockchain">Recoveri</Link></Col>
-                  <Col span={12}> <Link to="/blockchain">Doctor </Link></Col>
+                  <Col span={12}><Link to="/">Recoveri</Link></Col>
+                  <Col span={12}> <Link to="/">Doctor </Link></Col>
                 </Row>
                 <Row>
-                  <Col span={12}><Link to="/blockchain">Service</Link></Col>
-                  <Col span={12}> <Link to="/blockchain">Queue Management</Link></Col>
+                  <Col span={12}><Link to="/">Service</Link></Col>
+                  <Col span={12}> <Link to="/">Queue Management</Link></Col>
                 </Row>
                 <Row>
-                  <Col span={12}><Link to="/blockchain">Monitoring</Link></Col>
-                  <Col span={12}> <Link to="/blockchain">IJMA</Link></Col>
+                  <Col span={12}><Link to="/">Monitoring</Link></Col>
+                  <Col span={12}> <Link to="/">IJMA</Link></Col>
                 </Row>
               </div>
-            </div> */}
+            </div>
 
-            <Link to="/Industries" >Industries</Link>
+           
             <Link to="/portfolio" >Portfolio</Link>
-            <Link to="/contact" >Careers</Link>
             <Link to="/about" >About</Link>
+            <Link to="/contact" >Careers</Link>
             <Link to="/blog" >Blog</Link>
           </div>
           <div

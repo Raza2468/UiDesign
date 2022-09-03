@@ -45,8 +45,8 @@ export const App = () => {
         </Route>
 
         <Route path="industries" element={<Industries />} />
-        <Route path="blog" element={<Blog />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="blog" element={<Blog />} />
       </Routes>
     </BrowserRouter>
   );

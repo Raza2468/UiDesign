@@ -1,6 +1,9 @@
 import React from "react";
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import './Blog.css'
+
+
 
 const Blog = () => {
   return (
@@ -76,7 +79,9 @@ const Blog = () => {
         </div>
       </section>
       {/* <!-- End Why Us Section --> */}
-
+      <div>
+        <Footer />
+      </div>
       {/* <!-- End Hero Section --> */}
     </div>
   );

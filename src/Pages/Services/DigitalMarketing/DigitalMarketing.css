@@ -25,7 +25,8 @@
 }
 
 #DigitalMarketing .hero-DigitalMarketing h2 {
-    color: #0c2e8a;
+    /* color: #0c2e8a; */
+    color: white;
     margin-bottom: 30px;
     font-size: 64px;
     font-weight: 700;

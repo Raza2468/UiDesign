@@ -1,13 +1,13 @@
 import React from "react";
+import Footer from "../../Footer/Footer";
 import Header from "../../Header/Header";
-import './Blockchain.css'
+import "./Blockchain.css";
 
 const Blockchain = () => {
   return (
     <div>
       <Header />
       <section id="blockChain">
-
         <div class="hero-content" data-aos="fade-up">
           <h2>BLOCKCHAIN</h2>
         </div>
@@ -21,23 +21,28 @@ const Blockchain = () => {
       <section id="blockChainImage">
         <div class="container" data-aos="fade-up">
           <div class="row">
-
             <div class="col-lg-6 content" id="dollarText">
               <h2>Blockchain Development:</h2>
               <p id="dollarText">
-                The world has changed. Web 3.0 will certainly affect your business. AnoStrat builds dAPPS (Decentralized Apps)
-                that prepare your company for The Evolution of The Internet as we know it. Seamlessly applying DeFi Protocols
-                (Decentralized Finance Protocols) to enhance traceability and secure the details of Your Business Transactions,
-                AnoStrat Fortifies the Clients that select us.
-
+                The world has changed. Web 3.0 will certainly affect your
+                business. AnoStrat builds dAPPS (Decentralized Apps) that
+                prepare your company for The Evolution of The Internet as we
+                know it. Seamlessly applying DeFi Protocols (Decentralized
+                Finance Protocols) to enhance traceability and secure the
+                details of Your Business Transactions, AnoStrat Fortifies the
+                Clients that select us.
               </p>
             </div>
 
             <div class="col-lg-6 about-img ">
               <br />
-              <img id="dollarImage" src="https://buildmydapp.co/wp-content/uploads/2022/01/illustration-bitcoin-concept_53876-43952.jpg" alt="" height={300} />
+              <img
+                id="dollarImage"
+                src="https://en.bitcoinwiki.org/upload/en/images/e/e8/Blockchain1.jpg"
+                alt=""
+                height={300}
+              />
             </div>
-
           </div>
         </div>
       </section>
@@ -49,16 +54,17 @@ const Blockchain = () => {
       {/* <!-- ======= Counts Section ======= --> */}
       <section id="counts" class="counts">
         <div class="elementor-background-overla">
-
           <div class="row">
-
             <div class="col-lg-3 col-md-6">
               <div class="count-box">
                 <i class="fas fa-user-md"></i>
                 <br />
                 <br />
                 <br />
-                <h3>Private Blockchain<br /> Development</h3>
+                <h3>
+                  Private Blockchain
+                  <br /> Development
+                </h3>
               </div>
             </div>
 
@@ -68,7 +74,10 @@ const Blockchain = () => {
                 <br />
                 <br />
                 <br />
-                <h3>Private Blockchain<br /> Development</h3>
+                <h3>
+                  Private Blockchain
+                  <br /> Development
+                </h3>
               </div>
             </div>
 
@@ -78,7 +87,10 @@ const Blockchain = () => {
                 <br />
                 <br />
                 <br />
-                <h3>Private Blockchain<br /> Development</h3>
+                <h3>
+                  Private Blockchain
+                  <br /> Development
+                </h3>
               </div>
             </div>
 
@@ -88,12 +100,13 @@ const Blockchain = () => {
                 <br />
                 <br />
                 <br />
-                <h3>Private Blockchain<br /> Development</h3>
+                <h3>
+                  Private Blockchain
+                  <br /> Development
+                </h3>
               </div>
             </div>
-
           </div>
-
         </div>
       </section>
       <br />
@@ -103,6 +116,9 @@ const Blockchain = () => {
       <br />
       {/* <!-- End Counts Section --> */}
 
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };
