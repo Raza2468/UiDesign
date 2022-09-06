@@ -12,4 +12,5 @@ export { default as GarficDesigning } from "./Services/GarficDesigning/GarficDes
 export { default as MobileApp } from "./Services/MobileApp/MobileApp";
 export { default as DigitalMarketing } from "./Services/DigitalMarketing/DigitalMarketing";
 export { default as Industries } from "./Industries/Industries";
+export { default as Product } from "./Product/Product";
 // export { default as DigitalMarketing } from "./Home/Header";

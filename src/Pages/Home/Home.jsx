@@ -1,29 +1,38 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 import Header from "../Header/Header";
-
 import Footer from "../Footer/Footer";
 import "./Home.css";
-import MovingComponent from "react-moving-text";
 import HomeSlider from "../Images/HomeSlider.jpeg";
 import axios from "axios";
-// https://yidaoj.github.io/react-moving-text/example
+import Typed from "typed.js";
+
+
 
 const Home = () => {
-  const AnimationsForChaining = ["jelly"];
-  const AnimationsForChainingHeading = ["fadeInFromLeft"];
+  const el = useRef(null);
 
-  const [animationIndex, setAnimationIndex] = useState(0);
-  const [animationType, setAnimationType] = useState(AnimationsForChaining[0]);
-  const [animationTypeTypeHeading, setAnimationTypeHeading] = useState(
-    AnimationsForChainingHeading[0]
-  );
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["you Mean Business"],
+      startDelay: 300,
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 100,
+      // smartBackspace: true,
+      // loop: true,
+      // showCursor: true,
+      cursorChar: ""
+    });
 
-  const handleChainAnimation = () => {
-    setAnimationIndex(animationIndex + 1);
-    setAnimationType(animationIndex + 1);
-    setAnimationTypeHeading(animationIndex + 1);
-  };
+    // Destropying
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
+
+
 
   return (
     <div>
@@ -39,29 +48,15 @@ const Home = () => {
         >
           <div class="carousel-container">
             <div class="carousel-content">
-              <h2 class="animate__animated animate__fadeInDown">
-                <span>Driving Success</span>{" "}
+              <h2 class="animate__animated animate__fadeInDown" data-aos="zoom-in" data-aos-delay="100">
+                <span>We Know</span>{" "}
+                <br />
+                <span ref={el}></span>
               </h2>
-              {/* <MovingComponent
-                onAnimationEnd={handleChainAnimation}
-                type={animationTypeTypeHeading}
-                duration="1000ms"
-                timing="linear"
-                fillMode="forwards"
-                iteration={1}>
 
-              </MovingComponent> */}
 
-              <MovingComponent
-                onAnimationEnd={handleChainAnimation}
-                type={animationType}
-                duration="1000ms"
-                timing="linear"
-                fillMode="forwards"
-                iteration={1}
-              >
-                {/* <p class="animate__animated animate__fadeInUp p-2">What does your company need to be successful? Equipping themselves with the Latest Technology, to Perform Exceptionally. Let AnoStrat build your Technological Masterstroke.</p> */}
-              </MovingComponent>
+
+              {/* <p class="animate__animated animate__fadeInUp p-2">What does your company need to be successful? Equipping themselves with the Latest Technology, to Perform Exceptionally. Let AnoStrat build your Technological Masterstroke.</p> */}
               <div>
                 {/* <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a> */}
               </div>
@@ -166,14 +161,14 @@ const Home = () => {
             <div class="col-lg-6 content" id="dollarText">
               <h2>How does AnoStrat work?</h2>
               <p id="dollarText">
-                AnoStrat creates advanced solutions that produce scalable
-                instruments of tremendous architecture. Direct communications
-                with our development team empowers you to select tailored
-                options for your specific needs.
+                AnoStrat creates advanced solutions that produce scalable instruments of tremendous architecture.
+                Direct communications with our development team empowers you to select tailored options for your specific needs.
+                We have developed proprietary apps that will assist you in conducting daily business proceedings.
+
               </p>
             </div>
 
-            <div class="col-lg-6 about-img ">
+            <div class="col-lg-6">
               <img
                 id="dollarImage"
                 src="https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2022/05/02030257/dApp-on-NEAR-Protocol.png"
@@ -190,9 +185,9 @@ const Home = () => {
       <br />
       <br />
       <br />
-<div>
-  <Footer />
-</div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };

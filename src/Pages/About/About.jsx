@@ -49,7 +49,7 @@ const About = () => {
               </p>
             </div>
 
-            <div class="col-lg-6 about-img ">
+            <div class="col-lg-6">
               <br />
               <br />
               <br />

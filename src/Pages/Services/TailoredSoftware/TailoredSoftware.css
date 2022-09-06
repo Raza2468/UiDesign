@@ -106,3 +106,68 @@
 /*--------------------------------------------------------------
 # Tailored
 --------------------------------------------------------------*/
+
+
+
+#TailoredContain {
+    padding: 60px 0 30px 0;
+}
+
+#TailoredContain .about-img {
+    overflow: hidden;
+}
+
+#TailoredContain .about-img img {
+    margin-left: -15px;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    #TailoredContain .about-img {
+        height: auto;
+    }
+
+    #TailoredContain .about-img img {
+        margin-left: 0;
+        padding-bottom: 30px;
+    }
+}
+
+#TailoredContain .content h2 {
+    color: #0c2e8a;
+    font-weight: 700;
+    font-size: 36px;
+    font-family: "Raleway", sans-serif;
+}
+
+
+#TailoredContain .content p {
+    line-height: 26px;
+}
+
+#TailoredContain .content p:last-child {
+    margin-bottom: 0;
+}
+
+#TailoredContainText {
+    font-family: var(--global-body-font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #37000A;
+    line-height: 1.6;
+
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+#TailoredImage {
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
+    /* background-color: yellow; */
+    /* border: 5px solid; */
+  }
+  

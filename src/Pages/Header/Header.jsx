@@ -27,7 +27,7 @@ const Header = () => {
   const [navItemColor, setnavItemColor] = useState("#fff");
 
   const listenScrollEvent = () => {
-    
+
     window.scrollY > 10 ? setnavSize("5rem") : setnavSize("5rem");
     window.scrollY > 10 ? setnavColor("#fff") : setnavColor("#fff");
     window.scrollY > 10 ? setnavItemColor("#012049") : setnavItemColor("#fff");
@@ -57,10 +57,11 @@ const Header = () => {
             transition: "all 1s"
           }}>
 
-          <span className="nav-logo"><img src={logo} height={70} /></span>
+          <span className="nav-logo" id="nav-logo"><img src={logo} height={65} /></span>
           <div className={`nav-items ${isOpen && "open"}`}>
             <Link to="/" >Home</Link>
             <div class="dropdown">
+
               <div id="services">Services<img src="https://icon-library.com/images/dropdown-menu-icon/dropdown-menu-icon-12.jpg" height={20} /></div>
 
               <div class="dropdown-content">
@@ -100,12 +101,12 @@ const Header = () => {
               </div>
             </div> */}
 
-<Link to="/Industries" >Industries</Link>
+            <Link to="/Industries" >Industries</Link>
 
-            <div class="dropdown">
+            {/* <div class="dropdown">
               <div id="services"> Products<img src="https://icon-library.com/images/dropdown-menu-icon/dropdown-menu-icon-12.jpg" height={20} /></div>
-              <div class="dropdown-potfolio">
-                <Row>
+              <div class="dropdown-potfolio"> */}
+                {/* <Row>
                   <Col span={12}><Link to="/">Recoveri</Link></Col>
                   <Col span={12}> <Link to="/">Doctor </Link></Col>
                 </Row>
@@ -116,11 +117,12 @@ const Header = () => {
                 <Row>
                   <Col span={12}><Link to="/">Monitoring</Link></Col>
                   <Col span={12}> <Link to="/">IJMA</Link></Col>
-                </Row>
-              </div>
-            </div>
+                </Row> */}
+              {/* </div>
+            </div> */}
 
-           
+
+            <Link to="/product" >Products</Link>
             <Link to="/portfolio" >Portfolio</Link>
             <Link to="/about" >About</Link>
             <Link to="/contact" >Careers</Link>

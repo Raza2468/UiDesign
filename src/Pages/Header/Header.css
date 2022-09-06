@@ -65,6 +65,15 @@
     height: 70px !important;
   }
 
+  #nav-logo {
+ 
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    
+  
+  }
+
   .Navbar>.nav-items {
     position: absolute;
     top: 60px;

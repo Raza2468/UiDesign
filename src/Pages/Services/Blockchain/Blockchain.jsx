@@ -22,19 +22,17 @@ const Blockchain = () => {
         <div class="container" data-aos="fade-up">
           <div class="row">
             <div class="col-lg-6 content" id="dollarText">
-              <h2>Blockchain Development:</h2>
+              <h2>BLOCKCHAIN</h2>
               <p id="dollarText">
-                The world has changed. Web 3.0 will certainly affect your
-                business. AnoStrat builds dAPPS (Decentralized Apps) that
-                prepare your company for The Evolution of The Internet as we
-                know it. Seamlessly applying DeFi Protocols (Decentralized
-                Finance Protocols) to enhance traceability and secure the
-                details of Your Business Transactions, AnoStrat Fortifies the
-                Clients that select us.
+                The world has changed. Web 3.0 is set to affect Your Business.
+                AnoStrat builds dAPPS (Decentralized Apps) that prepare your company for
+                The Evolution of The Internet as we know it. Seamlessly applying DeFi Protocols
+                (Decentralized Finance Protocols) to enhance traceability and secure the details
+                of Your Business Transactions, AnoStrat Fortifies all of the Clients that select us.
               </p>
             </div>
 
-            <div class="col-lg-6 about-img ">
+            <div class="col-lg-6">
               <br />
               <img
                 id="dollarImage"

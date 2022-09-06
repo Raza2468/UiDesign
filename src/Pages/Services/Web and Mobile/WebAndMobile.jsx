@@ -27,28 +27,17 @@ const WebAndMobile = () => {
               <br />
               <h2>Web Development:</h2>
               <p id="dollarText">
-                We are a professional custom web design/development company.
-                Different creatively designed websites can be effectively used
-                by the firms to publicize their business. The individuals can
-                also launch their portfolios through these websites. Nowadays,
-                all the individuals, especially the merchants, aspire to have a
-                website of their own to publicize their merchandise.
-                <br />
-                We will help you to achieve your goals and to grow your
-                business. We offer a full range of Web Design Services. Blogs,
-                Online Stores, Multimedia Galleries, Search Engine Optimization
-                services and more. We specialize in affordable digital marketing
-                services for small to medium businesses..
-                <br />
-                Build My Dapp is dealing with all the major CMS like WordPress,
-                Magento, Shopify, Opencart, Joomla & Drupal. We’re also dealing
-                with all the major frameworks and specialize in LAMP & MERN
-                stack development. We build all kinds of static & dynamic sites
-                which full fill the client’s needs.
+                Web Development aiss the entire cluster of work that is required to produce a website. <br />
+                Businesses host a website on the WWW (Worldwide web) so it prominently displays their
+                identity to its visitors. The Web Development Team at AnoStrat works with you to
+                construct an elegant identity for Your Business on The Web. With our Web Development
+                teams using technologies like MERN Stack, MEAN Stack, HTML, CSS, Your Business website
+                will be a modern representation of Your Business online.
+
               </p>
             </div>
 
-            <div class="col-lg-6 about-img ">
+            <div class="col-lg-6 ">
               <br />
               <br />
               <br />

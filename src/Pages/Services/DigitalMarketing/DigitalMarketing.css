@@ -106,3 +106,68 @@
 /*--------------------------------------------------------------
 # DigitalMarketing
 --------------------------------------------------------------*/
+
+
+
+#DigitalContain {
+    padding: 60px 0 30px 0;
+}
+
+#DigitalContain .about-img {
+    overflow: hidden;
+}
+
+#DigitalContain .about-img img {
+    margin-left: -15px;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    #DigitalContain .about-img {
+        height: auto;
+    }
+
+    #DigitalContain .about-img img {
+        margin-left: 0;
+        padding-bottom: 30px;
+    }
+}
+
+#DigitalContain .content h2 {
+    color: #0c2e8a;
+    font-weight: 700;
+    font-size: 36px;
+    font-family: "Raleway", sans-serif;
+}
+
+
+#DigitalContain .content p {
+    line-height: 26px;
+}
+
+#DigitalContain .content p:last-child {
+    margin-bottom: 0;
+}
+
+#DigitalContainText {
+    font-family: var(--global-body-font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #37000A;
+    line-height: 1.6;
+
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+#DigitalAppImage {
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
+    /* background-color: yellow; */
+    /* border: 5px solid; */
+  }
+  
