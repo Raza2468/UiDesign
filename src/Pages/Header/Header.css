@@ -71,7 +71,12 @@
     background: #fff !important;
     height: 70px !important;
   }
-
+#logotext{
+  font-size: 170%;
+  margin-top: 1%;
+  font-weight: 600;
+  margin-left: -125%;
+}
   #nav-logo {
  
     justify-content: center;

@@ -79,7 +79,7 @@ const Header = () => {
                 </Row>
 
                 <Row>
-                  <Col span={12}><Link to="/TailoredSoftware">Content Writting</Link></Col>
+                  <Col span={12}><Link to="/TailoredSoftware">Content Writing</Link></Col>
                   <Col span={12}> <Link to="/DigitalMarketing"> Digital Marketing</Link></Col>
                 </Row>
 

@@ -11,7 +11,7 @@ const TailoredSoftware = () => {
       <Header />
       <section id="Tailored">
         <div class="hero-Tailored" data-aos="fade-up">
-          <h2>Containt Wraitting</h2>
+          <h2>Content Writing</h2>
         </div>
       </section>
       <br />
@@ -28,7 +28,7 @@ const TailoredSoftware = () => {
         <div class="container" data-aos="fade-up">
           <div class="row">
             <div class="col-lg-6 content" id="TailoredContainText">
-              <h2>Containt Wraitting</h2>
+              <h2>Content Writing</h2>
               <p id="TailoredContainText">
               Optimal functions of Your Business are vital to validate that it is operating as desired. AnoStrat helps build technological functions that assist your company in producing Optimal Results. Upon assignment, we provide you with the contact details of our software development manager and all you have to do is reach out to them for your software needs. 
 

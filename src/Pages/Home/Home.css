@@ -60,22 +60,28 @@
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
-    width: 90%;
+    margin-right: 150px;
+    margin-left: 80px;
+   
   }
 }
 @media (min-width: 880px) {
   #hero {
     background-attachment: fixed;
-    width: 90%;
+    margin-right: 150px;
+    margin-left: 80px;
+
   }
 }
 @media (max-width: 992px) {
   #hero {
     margin-bottom: 0;
     height: 70vh;
+    margin-right: 150px;
+    margin-left: 5%;
     /* margin-right: 150px;
     margin-left: 80px; */
-    width: 70%;
+
   }
 
   #hero .container {
@@ -97,7 +103,6 @@
 @media (max-height: 600px) {
   #hero {
     height: 100vh;
-    width: 90%;
   }
 }
 
@@ -133,10 +138,10 @@
 #hero .carousel-content {
   text-align: center;
 }
-#hero h2 {
+#hero h3 {
   color: #fff;
   margin-bottom: 30px;
-  font-size: 48px;
+  font-size: 43px;
   font-weight: 700;
 }
 #hero h2 span {
@@ -196,10 +201,7 @@
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
-#why-us{
-  margin-right: 150px;
-  margin-left: 160px;
-}
+
 .why-us .content {
   padding: 30px;
   background: #1977cc;

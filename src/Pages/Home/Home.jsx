@@ -13,9 +13,9 @@ const Home = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["You Mean Business"],
+      strings: ["We Feel Your Determination"],
       startDelay: 300,
-      typeSpeed: 100,
+      typeSpeed: 50,
       backSpeed: 100,
       backDelay: 100,
       // smartBackspace: true,
@@ -44,14 +44,14 @@ const Home = () => {
       >
         <div class="carousel">
           <div class="carousel-content">
-            <h2
+            <h3
               class="animate__animated animate__fadeInDown"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <span id="weKnow">We Know</span> <br />
+              {/* <span id="weKnow">We Know</span> <br /> */}
               <span ref={el}></span>
-            </h2>
+            </h3>
 
             <div></div>
           </div>
