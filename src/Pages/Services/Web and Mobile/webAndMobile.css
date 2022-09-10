@@ -5,11 +5,9 @@
     background: url("https://cdn3.notifyvisitors.com/blog/wp-content/uploads/2019/12/11071051/Introduction-to-Progressive-Web-Apps-on-desktop-banner1.jpg") ;
     background-size: cover;
     padding: 0;
-    /* height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0; */
-    position: absolute;
+      background-size: cover;
+    padding: 0;
+    margin-top: 6%;
 }
 
 #web .hero-content {

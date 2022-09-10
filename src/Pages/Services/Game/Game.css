@@ -5,6 +5,7 @@
     background: url("https://programadoresbrasil.com.br/wp-content/uploads/2021/12/trbr_artigo_banner1_210521-2.jpg") no-repeat;
     background-size: cover;
     padding: 0;
+    margin-top: 6%;
 }
 
 #game .hero-content {

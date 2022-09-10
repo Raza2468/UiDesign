@@ -1,20 +1,18 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import "./Home.css";
 import HomeSlider from "../Images/HomeSlider.jpeg";
-import axios from "axios";
+// import axios from "axios";
 import Typed from "typed.js";
-
-
 
 const Home = () => {
   const el = useRef(null);
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["you Mean Business"],
+      strings: ["You Mean Business"],
       startDelay: 300,
       typeSpeed: 100,
       backSpeed: 100,
@@ -22,7 +20,7 @@ const Home = () => {
       // smartBackspace: true,
       // loop: true,
       // showCursor: true,
-      cursorChar: ""
+      cursorChar: "",
     });
 
     // Destropying
@@ -31,39 +29,34 @@ const Home = () => {
     };
   }, []);
 
-
-
-
   return (
     <div>
       <Header />
 
-      <main>
-        <section
-          id="hero"
-          class="d-flex align-items-center"
-          style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL + HomeSlider})`,
-          }}
-        >
-          <div class="carousel">
-            <div class="carousel-content">
-              <h2 class="animate__animated animate__fadeInDown" data-aos="zoom-in" data-aos-delay="100">
-                <span>We Know</span>{" "}
-                <br />
-                <span ref={el}></span>
-              </h2>
+      {/* <main> */}
+      <section
+        id="hero"
+        class="d-flex align-items-center"
+        style={{
+          backgroundImage: `url(${process.env.PUBLIC_URL + HomeSlider})`,
+        }}
+      >
+        <div class="carousel">
+          <div class="carousel-content">
+            <h2
+              class="animate__animated animate__fadeInDown"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <span id="weKnow">We Know</span> <br />
+              <span ref={el}></span>
+            </h2>
 
-
-
-              {/* <p class="animate__animated animate__fadeInUp p-2">What does your company need to be successful? Equipping themselves with the Latest Technology, to Perform Exceptionally. Let AnoStrat build your Technological Masterstroke.</p> */}
-              <div>
-                {/* <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a> */}
-              </div>
-            </div>
+            <div></div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
+      {/* </main> */}
 
       {/* Cards */}
 
@@ -161,10 +154,12 @@ const Home = () => {
             <div class="col-lg-6 content" id="dollarText">
               <h2>How does AnoStrat work?</h2>
               <p id="dollarText">
-                AnoStrat creates advanced solutions that produce scalable instruments of tremendous architecture.
-                Direct communications with our development team empowers you to select tailored options for your specific needs.
-                We have developed proprietary apps that will assist you in conducting daily business proceedings.
-
+                AnoStrat creates advanced solutions that produce scalable
+                instruments of tremendous architecture. Direct communications
+                with our development team empowers you to select tailored
+                options for your specific needs. We have developed proprietary
+                apps that will assist you in conducting daily business
+                proceedings.
               </p>
             </div>
 

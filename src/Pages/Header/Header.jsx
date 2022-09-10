@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Col, Row } from 'antd';
 import logo from '../Images/logo.png'
 
@@ -57,7 +57,10 @@ const Header = () => {
             transition: "all 1s"
           }}>
 
-          <span className="nav-logo" id="nav-logo"><img src={logo} height={65} /></span>
+          <span className="nav-logo" id="nav-logo">
+            <img src={logo} height={68} width={62}/>
+            </span>
+          <span id="logotext">Ano Strat</span>
           <div className={`nav-items ${isOpen && "open"}`}>
             <Link to="/" >Home</Link>
             <div class="dropdown">
@@ -76,7 +79,7 @@ const Header = () => {
                 </Row>
 
                 <Row>
-                  <Col span={12}><Link to="/TailoredSoftware">Tailored Software</Link></Col>
+                  <Col span={12}><Link to="/TailoredSoftware">Content Writting</Link></Col>
                   <Col span={12}> <Link to="/DigitalMarketing"> Digital Marketing</Link></Col>
                 </Row>
 

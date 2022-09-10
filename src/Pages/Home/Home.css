@@ -2,17 +2,18 @@
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
+  width: 90%;
   height: 100vh;
-  margin-top: 20%;
   justify-content: center;
   align-items: center;
-  /* margin-right: -50%; */
+  margin-top: 6%;
   border-radius: 55px;
+  margin-right: 150px;
+  margin-left: 80px;
   /* right: 50px; */
-  /* margin-right: -20%; */
+  /* margin-left: 10%;  */
+   /* margin-right: 10%; */
   /* background: url("https://buildmydapp.co/wp-content/uploads/2021/12/bitcoin-g197a2d02a_1280-1024x681.jpg") top center; */
-  /* background: url("https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2022/05/02030257/dApp-on-NEAR-Protocol.png") top center; */
   background-size: cover;
   margin-bottom: -100px;
 }
@@ -55,16 +56,26 @@
   background: #3291e6;
 }
 
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+    width: 90%;
   }
 }
-
+@media (min-width: 880px) {
+  #hero {
+    background-attachment: fixed;
+    width: 90%;
+  }
+}
 @media (max-width: 992px) {
   #hero {
     margin-bottom: 0;
     height: 70vh;
+    /* margin-right: 150px;
+    margin-left: 80px; */
+    width: 70%;
   }
 
   #hero .container {
@@ -85,12 +96,15 @@
 
 @media (max-height: 600px) {
   #hero {
-    height: 110vh;
+    height: 100vh;
+    width: 90%;
   }
 }
 
 /*  */
-
+#weKnow{
+  color: white;
+}
 .iam{
   color: white;
     font-size: 55px;
@@ -182,12 +196,16 @@
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
-
+#why-us{
+  margin-right: 150px;
+  margin-left: 160px;
+}
 .why-us .content {
   padding: 30px;
   background: #1977cc;
   border-radius: 4px;
   color: #fff;
+  
 }
 
 .why-us .content h3 {
@@ -224,14 +242,15 @@
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 40px 30px;
-  width: 100%;
+  width: 100%;  
 }
 
 .why-us .icon-boxes .icon-box i {
   margin-top: 20px;
-  font-size: 40px;
+  font-size: 35px;
   color: #1977cc;
   margin-bottom: 20px;
+  
 }
 
 .why-us .icon-boxes .icon-box h4 {
