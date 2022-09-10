@@ -54,16 +54,17 @@ export default function Footer() {
                 {/* <!-- Grid column --> */}
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                   {/* <!-- Content --> */}
-                  <h6 class="text-uppercase fw-bold text-white">Company name</h6>
+                  <h6 class="text-uppercase fw-bold text-white">AnoStrat</h6>
                   <hr
                     class="mb-4 mt-0 d-inline-block mx-auto"
                     style={{ background: "#7c4dff", height: 2, width: 60 }}
                     // style="width: 60px; background-color: #7c4dff; height: 2px"
                   />
                   <p>
-                    Here you can use rows and columns to organize your footer
-                    content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit.
+                  A collective of experienced professionals that strive for producing products enhancing your 
+                  organizations workflows, effectively. From building products for the mass market to creating
+                   customized business solutions, 
+
                   </p>
                 </div>
                 {/* <!-- Grid column --> */}
@@ -78,22 +79,22 @@ export default function Footer() {
                   />
                   <p>
                     <a href="#!" class="text-white">
-                      MDBootstrap
+                    KollectIt
                     </a>
                   </p>
                   <p>
                     <a href="#!" class="text-white">
-                      MDWordPress
+                    DocRow
                     </a>
                   </p>
                   <p>
                     <a href="#!" class="text-white">
-                      BrandFlow
+                    QuePro
                     </a>
                   </p>
                   <p>
                     <a href="#!" class="text-white">
-                      Bootstrap Angular
+                    IJma
                     </a>
                   </p>
                 </div>
@@ -102,29 +103,29 @@ export default function Footer() {
                 {/* <!-- Grid column --> */}
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                   {/* <!-- Links --> */}
-                  <h6 class="text-uppercase fw-bold text-white " >Useful links</h6>
+                  <h6 class="text-uppercase fw-bold text-white " >Services </h6>
                   <hr
                     class="mb-4 mt-0 d-inline-block mx-auto"
                     style={{ background: "#7c4dff", height: 2, width: 60 }}
                   />
                   <p>
                     <a href="#!" class="text-white" >
-                      Your Account
+                    Blockchain Development
                     </a>
                   </p>
                   <p>
                     <a href="#!" class="text-white">
-                      Become an Affiliate
+                    Web Development
                     </a>
                   </p>
                   <p>
                     <a href="#!" class="text-white">
-                      Shipping Rates
+                    Content Writing
                     </a>
                   </p>
                   <p>
                     <a href="#!" class="text-white">
-                      Help
+                    Mobile App Development
                     </a>
                   </p>
                 </div>
@@ -138,14 +139,14 @@ export default function Footer() {
                     class="mb-4 mt-0 d-inline-block mx-auto"
                     style={{ background: "#7c4dff", height: 2, width: 60 }}
                   />
-                  <p>
-                    <i class="fas fa-home mr-3"></i> New York, NY 10012, US
+                  <p  style={{ width: 267 }}>
+                    <i class="fas fa-home mr-3" ></i> II Chundrigarh Road, Business Centre,
                   </p>
                   <p>
-                    <i class="fas fa-envelope mr-3"></i> info@example.com
+                    <i class="fas fa-envelope mr-3"></i> info@anostrat.com,
                   </p>
                   <p>
-                    <i class="fas fa-phone mr-3"></i> + 01 234 567 88
+                    <i class="fas fa-phone mr-3"></i> +2135341201
                   </p>
                   <p>
                     <i class="fas fa-print mr-3"></i> + 01 234 567 89
@@ -163,9 +164,9 @@ export default function Footer() {
             class="text-center p-3"
             style={{ background: "rgba(0, 0, 0, 0.2)" }}
           >
-            © 2020 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/">
-              MDBootstrap.com
+            © 2022 Copyright:
+            <a class="text-white" href="#!">
+            AnoStrat.com
             </a>
           </div>
           {/* <!-- Copyright --> */}

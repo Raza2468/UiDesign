@@ -4,6 +4,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import "./Home.css";
 import HomeSlider from "../Images/HomeSlider.jpeg";
+import HomeIMage from "../Images/image.png";
 // import axios from "axios";
 import Typed from "typed.js";
 
@@ -166,6 +167,7 @@ const Home = () => {
             <div class="col-lg-6">
               <img
                 id="dollarImage"
+                // src={HomeIMage}
                 src="https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2022/05/02030257/dApp-on-NEAR-Protocol.png"
                 alt=""
                 height={300}
