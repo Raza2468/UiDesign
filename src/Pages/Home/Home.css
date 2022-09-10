@@ -55,7 +55,19 @@
 #hero .btn-get-started:hover {
   background: #3291e6;
 }
-
+@media (min-width: 1280px) {
+  #hero {
+    background-attachment: fixed;
+    /* margin-right: 150px; */
+    /* margin-left: -130%; */
+    width: 90%;
+   
+  }
+  #why-us{
+    margin-right: 150px;
+    margin-left: 13%;
+  }
+}
 
 @media (min-width: 1024px) {
   #hero {
@@ -99,7 +111,9 @@
     margin-bottom: 30px;
   }
 }
-
+#weKnow{
+  color: white;
+}
 @media (max-height: 600px) {
   #hero {
     height: 100vh;
@@ -138,7 +152,7 @@
 #hero .carousel-content {
   text-align: center;
 }
-#hero h3 {
+#hero h2 {
   color: #fff;
   margin-bottom: 30px;
   font-size: 43px;
@@ -301,7 +315,7 @@
 }
 
 #homeAbout .about-img img {
-  margin-left: -15px;
+  /* margin-left: -15px; */
   max-width: 100%;
 }
 

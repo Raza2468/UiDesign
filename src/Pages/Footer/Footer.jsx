@@ -139,7 +139,7 @@ export default function Footer() {
                     class="mb-4 mt-0 d-inline-block mx-auto"
                     style={{ background: "#7c4dff", height: 2, width: 60 }}
                   />
-                  <p  style={{ width: 267 }}>
+                  <p >
                     <i class="fas fa-home mr-3" ></i> II Chundrigarh Road, Business Centre,
                   </p>
                   <p>
@@ -149,7 +149,7 @@ export default function Footer() {
                     <i class="fas fa-phone mr-3"></i> +2135341201
                   </p>
                   <p>
-                    <i class="fas fa-print mr-3"></i> + 01 234 567 89
+                    {/* <i class="fas fa-print mr-3"></i> + 01 234 567 89 */}
                   </p>
                 </div>
                 {/* <!-- Grid column --> */}

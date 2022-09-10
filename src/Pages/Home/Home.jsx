@@ -13,7 +13,7 @@ const Home = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["We Feel Your Determination"],
+      strings: ["You're Determined"],
       startDelay: 300,
       typeSpeed: 50,
       backSpeed: 100,
@@ -44,14 +44,14 @@ const Home = () => {
       >
         <div class="carousel">
           <div class="carousel-content">
-            <h3
+            <h2
               class="animate__animated animate__fadeInDown"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              {/* <span id="weKnow">We Know</span> <br /> */}
+              <span id="weKnow">We Know</span> <br />
               <span ref={el}></span>
-            </h3>
+            </h2>
 
             <div></div>
           </div>
@@ -163,8 +163,15 @@ const Home = () => {
                 proceedings.
               </p>
             </div>
-
-            <div class="col-lg-6">
+            <div class="col-lg-4 text-center order-1 order-lg-2">
+              <img
+                src="https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2022/05/02030257/dApp-on-NEAR-Protocol.png"
+                alt=""
+                class="img-fluid"
+                height={300}
+              />
+            </div>
+            {/* <div class="col-lg-6">
               <img
                 id="dollarImage"
                 // src={HomeIMage}
@@ -172,7 +179,7 @@ const Home = () => {
                 alt=""
                 height={300}
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
