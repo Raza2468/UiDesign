@@ -46,7 +46,7 @@ const Home = () => {
             backgroundImage: `url(${process.env.PUBLIC_URL + HomeSlider})`,
           }}
         >
-          <div class="carousel-container">
+          <div class="carousel">
             <div class="carousel-content">
               <h2 class="animate__animated animate__fadeInDown" data-aos="zoom-in" data-aos-delay="100">
                 <span>We Know</span>{" "}
