@@ -27,10 +27,11 @@ const DigitalMarketing = () => {
             <div class="col-lg-6 content" id="DigitalContainText">
               <h2>Digital Marketing</h2>
               <p id="DigitalContainText">
-                Marketing your services or products using social networks is a contemporary method to reach your prospective
-                customers. Through certified individuals conducting extensive research, applying unparalleled expertise
-                and practicing extraordinary effort, the team at AnoStrat will provide increased ROI (Return-On-Investment)
-                and High Volumes of Turnover for Your Business.
+                Marketing your services or products using social networks is a contemporary method
+                to reach your prospective customers. Through certified individuals conducting extensive
+                research, applying unparalleled expertise and practicing extraordinary effort, the team
+                at AnoStrat will provide increased ROI (Return-On-Investment) and High Volumes of 
+                Turnover for Your Business.
 
               </p>
             </div>

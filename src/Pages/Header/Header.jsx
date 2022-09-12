@@ -60,7 +60,8 @@ const Header = () => {
           <span className="nav-logo" id="nav-logo">
             <img src={logo} height={68} width={62}/>
             </span>
-          <span id="logotext">Ano Strat</span>
+          <span id="logotext">AnoStrat</span>
+          
           <div className={`nav-items ${isOpen && "open"}`}>
             <Link to="/" >Home</Link>
             <div class="dropdown">

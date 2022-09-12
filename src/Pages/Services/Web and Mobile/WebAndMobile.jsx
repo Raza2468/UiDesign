@@ -27,12 +27,13 @@ const WebAndMobile = () => {
               <br />
               <h2>Web Development:</h2>
               <p id="dollarText">
-                Web Development aiss the entire cluster of work that is required to produce a website. <br />
+                Web Development aiss the entire cluster of work that is required to produce a website.
                 Businesses host a website on the WWW (Worldwide web) so it prominently displays their
-                identity to its visitors. The Web Development Team at AnoStrat works with you to
-                construct an elegant identity for Your Business on The Web. With our Web Development
-                teams using technologies like MERN Stack, MEAN Stack, HTML, CSS, Your Business website
-                will be a modern representation of Your Business online.
+                identity to its visitors. The Web Development Team at AnoStrat works with you to construct
+                an elegant identity for Your Business on The Web. With our Web Development teams using
+                technologies like MERN Stack, MEAN Stack, HTML, CSS, Your Business website will be a modern
+                representation of Your Business online.
+
 
               </p>
             </div>

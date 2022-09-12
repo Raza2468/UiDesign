@@ -26,11 +26,11 @@ const MobileApp = () => {
             <div class="col-lg-6 content" id="MobileContainText">
               <h2>Mobile And App</h2>
               <p id="MobileContainText">
-                The Mobile Apps on your smartphone are products built by development teams
-                that worked to create convenient instruments of technology you can use on the go.
+                The Mobile Apps on your smartphone are products built by development teams that
+                worked to create convenient instruments of technology you can use on the go.
                 Combining Hybrid and Native Mobile App Development Frameworks, the team(s) at AnoStrat
-                are seasoned professionals who apply their experience to develop Mobile Apps using from
-                The Best Frameworks for mobile app development to help you every step of the way.
+                are seasoned professionals who apply their experience to develop Mobile Apps using
+                from The Best Frameworks for mobile app development to help you every step of the way.
                 Let AnoStrat developers’ sharp expertise and practiced experience master your flow of
                 business with Mobile Technology…
               </p>
